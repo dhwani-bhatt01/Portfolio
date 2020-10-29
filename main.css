@@ -15,6 +15,7 @@ header {
   justify-content: center;
   align-items: center;
   background-color: #9c95ff;
+  box-shadow: 6px 6px 10px rgba(156, 149, 255, 0.3);
   position: fixed;
   top: 0;
   width: 100%;
@@ -30,7 +31,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  margin: 190px auto 0 auto;
+  height: 100vh;
+  margin: 0 auto 0 auto;
 }
 
 #heroImage {
@@ -49,12 +51,17 @@ h1 {
   font-size: 54px;
 }
 
+.coloredBg {
+  background-color: #f5f4ff;
+  padding: 100px;
+}
+
 #about-me {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1000px;
-  margin: 150px auto 0 auto;
+  margin: 0 auto 0 auto;
 }
 
 .heading {
@@ -69,9 +76,7 @@ h1 {
   margin: 120px auto 0 auto;
   width: fit-content;
   color: #000000;
-  width: fit-content;
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -83,6 +88,7 @@ h1 {
   height: 300px;
   width: 300px;
   padding: 20px;
+  margin-bottom: 100px;
 }
 
 .parentCard {
@@ -100,4 +106,64 @@ h1 {
 .arrowImg {
   width: 20px;
   margin-left: 10px;
+}
+
+.skills {
+  margin: 0 auto 0 auto;
+  width: fit-content;
+}
+
+#contact {
+  background-color: blueviolet;
+  margin: 120px auto 0 auto;
+  width: fit-content;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connect {
+  color: #ffffff;
+}
+
+#email {
+  margin-top: 20px;
+}
+
+.copyright {
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.langImg {
+  height: 70px;
+}
+
+.langName {
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+#groupLang {
+  display: flex;
+  width: 800px;
+  margin: 50px auto 0 auto;
+  justify-content: space-between;
+}
+
+.groupLang-1 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  height: 250px;
+  justify-content: space-between;
 }
