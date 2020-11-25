@@ -99,6 +99,7 @@ h1 {
   width: fit-content;
   color: #000000;
 }
+
 .card {
   display: flex;
   flex-direction: column;
