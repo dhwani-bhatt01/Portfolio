@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -29,7 +30,7 @@ header {
   margin-right: 20px;
   display: flex;
   justify-content: space-around;
-  width: 50%;
+  width: 550px;
 }
 
 .nav-links li {
@@ -76,10 +77,13 @@ h1 {
 
 #about-me {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 1000px;
   margin: 0 auto 0 auto;
+}
+.aboutContainer {
+  width: 700px;
 }
 
 #myImg {
@@ -202,50 +206,95 @@ footer {
   width: 25px;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1180px) {
   #hero {
-    justify-content: space-around;
-    flex-direction: column-reverse;
+    width: 900px;
   }
+  .aboutInfo {
+    width: 600px;
+  }
+  #groupLang {
+    width: 600px;
+  }
+}
 
+@media only screen and (max-width: 786px) {
+  #hero {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100vw;
+  }
   #heroImage {
     height: 250px;
-    margin-top: 85px;
+    margin-bottom: 100px;
   }
-
   #about-me {
     flex-direction: column;
-    width: 350px;
+    width: 100vw;
+    margin: 0 auto;
+    margin-left: -100px;
   }
-
+  .aboutContainer {
+    width: 500px;
+  }
   #myImg {
-    width: 250px;
+    width: 300px;
+    margin-bottom: 50px;
   }
-
-  .heading {
-    margin-top: 30px;
-  }
-
   .aboutInfo {
-    width: 350px;
+    width: 500px;
   }
-
-  .blogTitle {
-    margin: 80px auto 0 auto;
-  }
-
-  .card {
-    height: 250px;
-    width: 250px;
-    padding: 30px;
-  }
-
   .parentCard {
     flex-direction: column;
-    width: 250px;
+    align-items: center;
   }
-
+  .lang {
+    flex-direction: column;
+    align-items: center;
+  }
   #groupLang {
-    width: 500px;
+    width: 568px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #heroImage {
+    height: 180px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 14px;
+  }
+  #name {
+    font-size: 40px;
+  }
+  .aboutContainer {
+    width: 300px;
+  }
+  #myImg {
+    width: 300px;
+  }
+  .aboutInfo {
+    width: 300px;
+  }
+  .parentCard {
+    width: 300px;
+  }
+  #skills {
+    width: 300px;
+    margin-left: -60px;
+  }
+  .langImg {
+    height: 40px;
+  }
+  #groupLang {
+    width: 300px;
+    justify-content: space-evenly;
+  }
+  .copyright {
+    width: 310px;
+    text-align: center;
   }
 }
